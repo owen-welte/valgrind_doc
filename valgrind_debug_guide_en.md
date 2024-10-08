@@ -6,10 +6,10 @@
 Before using Valgrind, make sure to compile your project with the appropriate flags to include debugging information.
 
 ```bash
-gcc -g -ggdb3 -o my_project my_project.c
+gcc -ggdb3 -o my_project my_project.c
 ```
 
-The `-g` and `-ggdb3` options add debugging information to the executable, which will make it easier to analyze with Valgrind.
+The `-ggdb3` option add debugging information to the executable, which will make it easier to analyze with Valgrind.
 
 ## 2. Introduction to Valgrind
 
@@ -88,7 +88,7 @@ The program crashes with a **segmentation fault** when trying to modify the stri
 Now, let's compile it with debugging flags and use Valgrind to investigate the cause of the error.
 
 ```bash
-$ gcc -g -ggdb3 -o my_project my_project.c
+$ gcc -ggdb3 -o my_project my_project.c
 $ valgrind ./my_project
 ```
 
